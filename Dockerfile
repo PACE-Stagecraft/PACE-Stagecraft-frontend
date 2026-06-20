@@ -20,6 +20,9 @@ COPY . .
 # Set env for build
 ENV NEXT_TELEMETRY_DISABLED 1
 ENV NODE_ENV production
+# Empty string = relative URLs — frontend and API share the same NLB domain
+# so /api/v1/... routes to the API service via kGateway path-based routing
+ENV NEXT_PUBLIC_API_URL ""
 
 # Build the Next.js application
 RUN npm run build
