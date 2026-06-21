@@ -14,10 +14,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    font-weight: 500;
   }
 
   body {
-    @apply bg-zinc-50 text-zinc-800;
+    @apply bg-zinc-50 text-zinc-800 font-medium;
   }
 
   ::-webkit-scrollbar {
