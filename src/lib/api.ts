@@ -145,4 +145,31 @@ export async function fetchAnalytics(): Promise<AnalyticsData> {
   return data
 }
 
+// ── Feature 3: Natural Language Pipeline Chat ─────────────────────────────
+
+export interface ChatResponse {
+  answer: string
+  sql?: string | null
+  data?: Record<string, unknown>[] | null
+  error?: string | null
+}
+
+export async function sendChatMessage(message: string): Promise<ChatResponse> {
+  const { data } = await api.post<ChatResponse>('/api/v1/chat/', { message })
+  return data
+}
+
+// ── Feature 4: Multi-Repo Correlation ────────────────────────────────────
+
+export async function getSimilarRemediations(
+  remediationId: string,
+  limit = 5
+): Promise<Remediation[]> {
+  const { data } = await api.get<Remediation[]>(
+    `/api/v1/remediations/${remediationId}/similar`,
+    { params: { limit } }
+  )
+  return data
+}
+
 export default api

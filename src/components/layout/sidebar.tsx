@@ -9,6 +9,7 @@ import {
   ListChecks,
   Wrench,
   BarChart2,
+  MessageSquare,
   FlaskConical,
   Settings,
   LogOut,
@@ -42,6 +43,11 @@ const navItems = [
     label: 'Analytics',
     href: '/analytics',
     icon: BarChart2,
+  },
+  {
+    label: 'Pipeline Chat',
+    href: '/chat',
+    icon: MessageSquare,
   },
   {
     label: 'K8s Remediation',
