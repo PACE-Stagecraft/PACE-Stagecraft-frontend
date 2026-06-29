@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -75,7 +75,7 @@ export function Sidebar({ user }: SidebarProps) {
           className="text-zinc-900 dark:text-zinc-100 tracking-tight"
           style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: '1.25rem' }}
         >
-          aGorA
+          Stagecraft
         </span>
         <ThemeToggle />
       </div>

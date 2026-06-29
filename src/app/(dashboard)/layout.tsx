@@ -1,4 +1,4 @@
-import { cookies } from 'next/headers'
+﻿import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { Sidebar } from '@/components/layout/sidebar'
 import type { User } from '@/types'
@@ -11,11 +11,11 @@ const SERVER_API_URL =
 async function getUser(): Promise<User | null> {
   try {
     const cookieStore = cookies()
-    const token = cookieStore.get('agora_token')
+    const token = cookieStore.get('stagecraft_token')
     if (!token) return null
 
     const res = await fetch(`${SERVER_API_URL}/api/v1/auth/me`, {
-      headers: { Cookie: `agora_token=${token.value}` },
+      headers: { Cookie: `stagecraft_token=${token.value}` },
       cache: 'no-store',
     })
 

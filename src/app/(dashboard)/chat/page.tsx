@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useRef, useEffect } from 'react'
 import { Bot, Send, Loader2, Terminal, ChevronDown, ChevronUp } from 'lucide-react'
@@ -25,7 +25,7 @@ const SUGGESTIONS = [
   'What are the most common root causes of our failures?',
   'How do we usually fix dependency version errors?',
   'Summarize the auth failures and their fixes',
-  'What kinds of issues affect agora-api the most?',
+  'What kinds of issues affect stagecraft-api the most?',
   'Have we seen this kind of build error before?',
 ]
 

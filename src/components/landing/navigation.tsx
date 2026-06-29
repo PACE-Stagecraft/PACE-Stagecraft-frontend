@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
@@ -45,7 +45,7 @@ export function Navigation() {
                 isScrolled ? 'text-xl' : 'text-2xl'
               }`}
             >
-              aGorA
+              Stagecraft
             </span>
           </a>
 

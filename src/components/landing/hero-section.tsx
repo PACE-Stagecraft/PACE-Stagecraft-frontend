@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
@@ -92,7 +92,7 @@ export function HeroSection() {
             }`}
           >
             Stop switching between GitHub tabs to find failing runs.
-            aGorA shows every workflow run across every repo in one live view —
+            Stagecraft shows every workflow run across every repo in one live view —
             and when something breaks, AI reads the logs and suggests the fix.
           </p>
 
